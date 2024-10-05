@@ -6,10 +6,6 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 @app.route('/', methods=['GET', 'POST'])
-def hello_world():  # put application's code here
-    return 'Hello World!'
-
-@app.route('/site', methods=['GET', 'POST'])
 def index():
     form = site1()
     result = None
